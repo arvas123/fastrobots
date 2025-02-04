@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My website
+title: Fast Robots (ECE 4160)
 
 # Your name to show in the footer
-author: Some Person
+author: Arnav Vasudev
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -258,10 +258,10 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "America/NewYork"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /title/
 paginate: 5
 
 kramdown:
@@ -283,6 +283,9 @@ defaults:
     values:
       layout: "page"
 
+navbar-links:
+  Home: "/"
+  About: "/aboutme"
 # Exclude these files from production site
 exclude:
   - CHANGELOG.md
