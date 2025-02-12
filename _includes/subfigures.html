@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row text-center">
+    {% for i in (1..2) %}
+    <div class="col-md-6">
+      {% assign img_key = 'img' | append: i %}
+      {% assign caption_key = 'caption' | append: i %}
+      
+      <figure>
+        <img src="{{ include[img_key] }}" class="img-fluid" alt="{{ include[caption_key] }}">
+        <figcaption>{{ include[caption_key] }}</figcaption>
+      </figure>
+    </div>
+    
+    {% if i == 2 %}</div><div class="row text-center mt-3">{% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+  
